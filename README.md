@@ -4,7 +4,9 @@
 #### This project is an implementation of simple Perceptron model. A perceptron model can be created using the 'Perceptron' class with the defining parameters as per the user choice
 
 ### Train and Test
-#### 'train' and 'test' methods takes in the input dataset which is expected to be in the following format:
+#### 'train' method takes in input dataset which is expected to be in the following format:
+##### First n columns are the features (X) and the last column is the target (y)
+#### 'test' method takes in testing dataset which is expected to be in the following format:
 ##### First n columns are the features (X) and the last column is the target (y)
 
 ## Metrics
