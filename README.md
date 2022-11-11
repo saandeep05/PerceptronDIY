@@ -4,6 +4,7 @@
 #### In this project we try to predict whether water with given characteristics is drinkable or not.
 #### This is binary classification problem is_safe (0/1)
 #### I have created a perceptron model API for prediction
+#### Dataset: https://www.kaggle.com/datasets/mssmartypants/water-quality
 
 ## Perceptron Model
 #### This project is an implementation of simple Perceptron model. A perceptron model can be created using the 'Perceptron' class with the defining parameters as per the user choice
