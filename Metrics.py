@@ -4,16 +4,20 @@ import pandas as pd
 class Metrics(object):
 
     def __init__(self, target, result):
+        # set target and result
         self.target = target
         self.result = result
 
+    '''
+    * Method to calculate efficiency of a model
+    '''
     def efficiency(self):
+        # checking whether dtypes matched
         if type(self.target) != type(self.result):
-            print("Dtypes of target and result does not match")
-            return 0
+            raise TypeError("Dtypes of target and result does not match")
+        # checking whether they are of same length
         elif len(self.target) != len(self.result):
-            print("Lengths of target and result does not match")
-            return 0
+            raise IndexError("Lengths of target and result does not match")
 
         count = 0
         for i in range(len(self.target)):
@@ -21,13 +25,14 @@ class Metrics(object):
                 count += 1
         return count / len(self.target) * 100
 
+    '''
+    * Method to get confusion matrix
+    '''
     def confusion_matrix(self):
         if type(self.target) != type(self.result):
-            print("Dtypes of target and result does not match")
-            return pd.DataFrame
+            raise TypeError("Dtypes of target and result does not match")
         elif len(self.target) != len(self.result):
-            print("Lengths of target and result does not match")
-            return pd.DataFrame
+            raise IndexError("Lengths of target and result does not match")
 
         conf_mtrx = {'Positives': [0, 0],
                      'Negatives': [0, 0]}
