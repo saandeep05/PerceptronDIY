@@ -1,0 +1,53 @@
+Observations of different combinations
+
+alpha = pow(10, -5)
+theta = -0.05
+ep = 100
+result = 86.32%
+
+alpha = pow(10, -5)
+theta = -0.5
+ep = 10
+result = 88.79%
+
+alpha = pow(10, -5)
+theta = -0.05
+ep = 10
+result = 88%
+
+alpha = pow(10, -1)
+theta = -0.5
+ep = 10
+result = 87%
+
+alpha = pow(10, -4)
+theta = -0.5
+ep = 10
+result = 88.79%
+
+alpha = pow(10, -4)
+theta = -0.05
+ep = 10
+result = 87.45%
+
+alpha = pow(10, -5)
+theta = -0.05
+ep = 20
+result = 83.53%
+
+alpha = pow(10, -5)
+theta = -0.05
+ep = 5
+result = 85.62%
+
+alpha = pow(10, -5)
+theta = -0.005
+ep = 5
+weights = 1
+result = 55.73%
+
+alpha = pow(10, -1)
+theta = -0.05
+ep = 5
+weights = 1
+result = 87.29%
